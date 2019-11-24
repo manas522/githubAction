@@ -5,4 +5,7 @@ jobs:
   hello_world_job:
     uses: docker://openwebspace/cordova:8.1.2
     name: A job to say hello
-      run: cordova -v
+    steps:
+    - name: Hello world action step
+      id: hello
+      uses: openwebspace/cordova:8.1.2
