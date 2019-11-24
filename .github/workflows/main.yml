@@ -6,6 +6,9 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
-    - name: Hello world action step
-      id: hello
+    - name: Checkout Directory
+      id: checkout
+      uses: actions/checkout@v1
+    - name: Get Docker Image
+      id: docker
       uses: docker://openwebspace/cordova:8.1.2
