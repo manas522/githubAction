@@ -1,0 +1,4 @@
+#Sun Nov 24 13:21:52 PST 2019
+base.0=/Users/manassingh/Documents/DexterLab/MyApp/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0
+renamed.0=classes.dex
+file.0=/Users/manassingh/Documents/DexterLab/MyApp/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex
