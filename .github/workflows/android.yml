@@ -1,3 +1,4 @@
+name: CI
 on: [push]
 
 jobs:
@@ -5,7 +6,10 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
-    # To use this repository's private action, you must check out the repository
-    - name: Checkout
-      uses: actions/checkout@v1
-    - uses: ./ # Uses an action in the root directory
+      - name: Checkout
+        uses: actions/checkout@v1
+      - uses: ./
+      - name: Use Node.jstest
+        uses: actions/setup-node@v1
+      - name: NPM test
+        run: npm -v
