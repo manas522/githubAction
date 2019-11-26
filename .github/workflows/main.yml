@@ -8,8 +8,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v1
-      - name: Use Node.js test
-        uses: actions/setup-node@v1
+      - uses: ./
+      - name: Hello world action step
+        id: hello
+        uses: actions/githubAction@v1
       - uses: action
       - name: NPM test
         run: cordova -v
