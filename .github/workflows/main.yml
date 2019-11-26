@@ -9,8 +9,5 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
       - uses: ./
-      - name: Hello world action step
-        id: hello
-        uses: actions/githubAction@v1
       - name: NPM test
         run: cordova -v
