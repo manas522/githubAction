@@ -6,7 +6,11 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
-    - uses: docker://openwebspace/cordova:8.1.2
-    - run: cordova -v
-    - run: ls
+      - name: Checkout
+        uses: actions/checkout@v1
+      - uses: ./
+      - name: Docker
+        id: hello
+        uses: actions/githubAction@master
+
 
