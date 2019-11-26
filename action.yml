@@ -10,6 +10,6 @@ outputs:
     description: 'The time we greeted you'
 runs:
   using: 'docker'
-  image: 'Dockerfile'
+  image: 'docker://openwebspace/cordova:8.1.2'
   args:
-    - ${{ inputs.who-to-greet }}
+    - cordova -v
