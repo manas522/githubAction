@@ -12,3 +12,6 @@ jobs:
     - name: Get Docker Image
       id: docker
       uses: docker://openwebspace/cordova:8.1.2
+    - name: check cordova version
+      id: cordova
+      run: cordova -v
