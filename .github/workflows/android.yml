@@ -6,8 +6,10 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
-      - uses: ./
-      - name: Use Node.jstest
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Use Node.js test
         uses: actions/setup-node@v1
+      - uses: ./
       - name: NPM test
-        run: npm -v
+        run: cordova -v
