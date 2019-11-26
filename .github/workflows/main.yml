@@ -12,6 +12,5 @@ jobs:
       - name: Hello world action step
         id: hello
         uses: actions/githubAction@v1
-      - uses: action
       - name: NPM test
         run: cordova -v
