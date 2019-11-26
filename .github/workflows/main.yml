@@ -9,8 +9,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
       - uses: ./
-      - name: Docker
-        id: hello
-        uses: actions/githubAction@master
+      - name: Use Node.js ${{ matrix.node_version }}
+        uses: actions/setup-node@v1
+      - name: NPM test
+        run: npm -v
 
 
