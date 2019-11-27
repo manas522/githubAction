@@ -1,4 +1,6 @@
 #!/bin/sh -l
 
 echo "Hello From ACtion"
-cordova requirements
+ls
+cordova telemetry on
+cordova requirements 
