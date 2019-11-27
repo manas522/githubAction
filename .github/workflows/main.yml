@@ -9,3 +9,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
       - uses: ./
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v1
+        with:
+          name: dist
+          path: dist
