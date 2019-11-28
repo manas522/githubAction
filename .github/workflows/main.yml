@@ -10,4 +10,4 @@ jobs:
         uses: actions/checkout@v1
       - uses: ./
       - name: list directory
-        run: ls
+        run: cd MyApp/platforms/android/app/build
