@@ -10,4 +10,4 @@ jobs:
         uses: actions/checkout@v1
       - name: list directory
         run:
-          cd MyApp/platforms/hooks;ls
+          cd MyApp/platforms/android/app;ls
