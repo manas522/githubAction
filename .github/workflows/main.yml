@@ -11,3 +11,5 @@ jobs:
       - uses: ./
       - name: list directory
         run: cd MyApp/platforms/android/app/build
+      - name: test files
+        run: ls
