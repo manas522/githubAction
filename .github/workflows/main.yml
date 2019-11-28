@@ -8,7 +8,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v1
-      - uses: ./
       - name: list directory
         run:
-          cd MyApp/platforms/android/app/build;ls
+          cd MyApp/platforms/hooks;ls
