@@ -9,8 +9,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
       - run: touch sample.txt
-      - uses: actions/upload-artifact@v1
-        with:
-          name: my-artifact
-          path: sample.txt
+      - name: My first step
+        uses: docker://openwebspace/cordova:8.1.2
+      - run: cordova
+
           
