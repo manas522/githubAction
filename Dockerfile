@@ -2,13 +2,12 @@
 FROM openwebspace/cordova:8.1.2
 
 # Copies your code file from your action repository to the filesystem path `/` of the container
-COPY entrypoint.sh /entrypoint.sh
+# COPY entrypoint.sh /entrypoint.sh
 
-RUN echo "Hello From ACtion" &&
-    cd MyApp &&
-    cordova telemetry on &&
-    cordova platform remove android &&
-    cordova platform add android &&
+RUN cd MyApp && \
+    cordova platform remove android && \
+    cordova platform add android && \
     cordova build android --verbose
+    
 # Code file to execute when the docker container starts up (`entrypoint.sh`)
 # ENTRYPOINT ["/entrypoint.sh"]
